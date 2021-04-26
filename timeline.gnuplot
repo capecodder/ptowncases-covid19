@@ -25,6 +25,10 @@ set ylabel 'Recovered Cases' font FONTSPEC
 set yrange [0:]
 set ytics nomirror
 
+# Without left y-axis
+#unset ylabel
+#unset ytics
+
 # Right y-axis (aka x1y2)
 set y2label 'Active Cases' font FONTSPEC
 set y2range [0:12] # manually include some whitespace for the ceiling
@@ -34,8 +38,8 @@ set y2tics 2 nomirror
 set key font FONTSPEC left top reverse
 
 # Define "linestyle n" or "ls n" specs for subsequent "plot data using"
-set style line 1 lc rgb 'blue' lw 2
-set style line 2 lc rgb 'orange' lw 3
+set style line 1 lc rgb 'blue' lw 2 # recovered
+set style line 2 lc rgb 'orange' lw 3 # active
 set style line 3 lc rgb '#eeeeee' lw 2 # total
 set style line 4 lc rgb 'gold' lw 1 # model
 
