@@ -1,2 +1,14 @@
 # ptowncases-covid19
-Graph active and recovered cases in town
+
+## Introduction
+
+This project aims to chart the recovered and active cases in the Town of Provincetown, MA.
+
+## Sources
+
+- Town of [Provincetown, MA](http://www.provincetown-ma.gov/)
+- Gnuplot [homepage](http://www.gnuplot.info/)
+
+## Sample
+
+A recent [link to PNG chart](timeline.png) from a previous build.

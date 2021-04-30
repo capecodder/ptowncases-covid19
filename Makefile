@@ -1,4 +1,4 @@
-
+# GNU Make 4.3
 
 # Tested gnuplot 5.4 patchlevel 1
 GNUPLOT=gnuplot
