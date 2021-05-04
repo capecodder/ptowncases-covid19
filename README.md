@@ -11,4 +11,4 @@ This project aims to chart the recovered and active cases in the Town of Provinc
 
 ## Sample
 
-A recent [link to PNG chart](timeline.png) from a previous build.
+A recent [link to the PNG chart](timeline.png) from a previous build.
