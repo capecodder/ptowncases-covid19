@@ -1,4 +1,3 @@
-reset
 data = "data.csv"
 holidays = "holidays.csv"
 model = "model.csv"
@@ -24,7 +23,7 @@ set title "Recovered and Active Cases in Provincetown\n{/*0.8 Sources: Town of P
 # Left y-axis (aka x1y1)
 set ylabel 'Recovered Cases' font FONTSPEC
 set yrange [0:]
-set ytics nomirror
+set ytics 10 nomirror
 
 # Without left y-axis
 #unset ylabel
@@ -47,12 +46,12 @@ set style line 5 lc rgb 'dark-green' lw 2 # Massachusetts DPH Total Case Count f
 
 # Parens in the "using" clause indicate a formula or literal value
 plot \
-     model    using 1:2        with lines    title 'Line Fit'  axes x1y1 ls 4                               , \
-     data     using 1:2        with impulses title 'Active'    axes x1y2 ls 2                               , \
-     data     using 1:3        with lines    title 'Recovered' axes x1y1 ls 1                               , \
-     data     using 1:3:4      with labels   notitle           axes x1y1 font LABELFONTSPEC offset 0,char 1 , \
-     holidays using 1:(1.00):2 with labels   notitle           axes x1y2 font LABELFONTSPEC rotate by 90    , \
-     combinedpttr using 1:5 with lines title 'Massachusetts DPH Total Case Count for Provincetown and Truro' axes x1y1 ls 5
+     model    using 1:2        with lines    title 'Line Fit'                 axes x1y1 ls 4                               , \
+     data     using 1:2        with impulses title 'Active, Town-reported'    axes x1y2 ls 2                               , \
+     data     using 1:3        with lines    title 'Recovered, Town-reported' axes x1y1 ls 1                               , \
+     data     using 1:3:4      with labels   notitle                          axes x1y1 font LABELFONTSPEC offset 0,char 1 , \
+     holidays using 1:(1.00):2 with labels   notitle                          axes x1y2 font LABELFONTSPEC rotate by 90    , \
+     combinedpttr using 1:5 with lines title 'Total Case Count for Provincetown and Truro, State-reported' axes x1y1 ls 5
 
      # Add this first for grey sum of Active and Recovered cases. Don't forget trailing comma+backslash.
      # data     using 1:($2+$3)  with lines    title 'Total'     axes x1y1 ls 3
