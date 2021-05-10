@@ -5,7 +5,7 @@ combinedpttr = "massdph-oc.csv"
 set term png size 1024,1024
 set output "timeline.png"
 set datafile separator comma
-LABELFONTSPEC = 'droid sans'
+LABELFONTSPEC = 'droid sans,8'
 # Valid FONTSPECs are 'default', 'mono', 'humor sans' or
 FONTSPEC = 'droid sans'
 
@@ -49,8 +49,10 @@ plot \
      model    using 1:2        with lines    title 'Line Fit'                 axes x1y1 ls 4                               , \
      data     using 1:2        with impulses title 'Active, Town-reported'    axes x1y2 ls 2                               , \
      data     using 1:3        with lines    title 'Recovered, Town-reported' axes x1y1 ls 1                               , \
-     data     using 1:3:4      with labels   notitle                          axes x1y1 font LABELFONTSPEC offset 0,char 1 , \
-     holidays using 1:(1.00):2 with labels   notitle                          axes x1y2 font LABELFONTSPEC rotate by 90    , \
+     \
+     data     using 1:3:4      with labels   notitle                          axes x1y1 font LABELFONTSPEC offset 0,char 0.5 , \
+     holidays using 1:(1.00):2 with labels   notitle                          axes x1y2 font FONTSPEC rotate by 90           , \
+     \
      combinedpttr using 1:5 with lines title 'Total Case Count for Provincetown and Truro, State-reported' axes x1y1 ls 5
 
      # Add this first for grey sum of Active and Recovered cases. Don't forget trailing comma+backslash.
