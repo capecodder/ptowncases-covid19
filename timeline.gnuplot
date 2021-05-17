@@ -18,7 +18,7 @@ set xdata time
 set xtics nomirror rotate by -60 format '%Y-%m-%d' # axis time
 
 # Title and subtitle with font size change
-set title "Recovered and Active Cases in Provincetown\n{/*0.8 Sources: Town of Provincetown and Commonwealth of Massachusetts}\n{/*0.8 Line Fit between 12/01 and 04/17 projects 131 recovered cases by Memorial Day}" font FONTSPEC
+set title "Recovered and Active Cases in Provincetown\n{/*0.8 Sources: Town of Provincetown and Commonwealth of Massachusetts}\n{/*0.8 Line Fit between 12/01 and 04/17 extrapolates 131 recovered cases by Memorial Day}" font FONTSPEC
 
 # Left y-axis (aka x1y1)
 set ylabel 'Recovered Cases' font FONTSPEC
