@@ -4,6 +4,10 @@
 
 This project aims to chart the recovered and active cases in the Town of Provincetown, MA.
 
+## Disclaimer
+
+If any, errors in the underlying data presented in **this** chart are likely transcription errors from the spreadsheet data sources listed below. When in doubt, __which you should be__, consult the original data source for correct information.
+
 ## Data Sources
 
 - Town of [Provincetown, MA](http://www.provincetown-ma.gov/)
