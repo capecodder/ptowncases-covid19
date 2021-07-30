@@ -53,7 +53,7 @@ plot \
      data     using 1:3:4      with labels   notitle                          axes x1y1 font LABELFONTSPEC offset 0,char 0.5 , \
      holidays using 1:(1.00):2 with labels   notitle                          axes x1y2 font FONTSPEC rotate by 90           , \
      \
-     combinedpttr using 1:5 with lines title 'Total Case Count for Provincetown and Truro, State-reported' axes x1y1 ls 5
+     combinedpttr using 1:5 with linespoints title 'Total Case Count for Provincetown and Truro, State-reported' axes x1y1 ls 5
 
      # Add this first for grey sum of Active and Recovered cases. Don't forget trailing comma+backslash.
      # data     using 1:($2+$3)  with lines    title 'Total'     axes x1y1 ls 3
