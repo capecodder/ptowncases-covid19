@@ -18,7 +18,8 @@ set xdata time
 set xtics nomirror rotate by -60 format '%Y-%m-%d' # axis time
 
 # Title and subtitle with font size change
-set title "Recovered and Active Cases in Provincetown\n{/*0.8 Sources: Town of Provincetown and Commonwealth of Massachusetts}\n{/*0.8 Line Fit between 12/01 and 04/17 extrapolates 131 recovered cases by Memorial Day}" font FONTSPEC
+# Remove model from display.
+set title "Recovered and Active Cases in Provincetown\n{/*0.8 Sources: Town of Provincetown and Commonwealth of Massachusetts}" font FONTSPEC
 
 # Left y-axis (aka x1y1)
 set ylabel 'Recovered Cases' font FONTSPEC
@@ -46,7 +47,6 @@ set style line 5 lc rgb 'dark-green' lw 2 # Massachusetts DPH Total Case Count f
 
 # Parens in the "using" clause indicate a formula or literal value
 plot \
-     model    using 1:2        with lines    title 'Line Fit'                 axes x1y1 ls 4                               , \
      data     using 1:2        with impulses title 'Active, Town-reported'    axes x1y2 ls 2                               , \
      data     using 1:3        with lines    title 'Recovered, Town-reported' axes x1y1 ls 1                               , \
      \
@@ -57,3 +57,5 @@ plot \
 
      # Add this first for grey sum of Active and Recovered cases. Don't forget trailing comma+backslash.
      # data     using 1:($2+$3)  with lines    title 'Total'     axes x1y1 ls 3
+     # Remove model from display.
+     # model    using 1:2        with lines    title 'Line Fit'                 axes x1y1 ls 4
