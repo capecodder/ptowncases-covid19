@@ -15,7 +15,7 @@ set xdata time
 # set xrange ['2020-11-20':]
 
 # Output data format
-set xtics nomirror rotate by -60 format '%Y-%m-%d' # axis time
+set xtics mirror rotate by -60 format '%Y-%m-%d' # axis time
 
 # Title and subtitle with font size change
 # Remove model from display.
