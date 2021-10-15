@@ -1,18 +1,19 @@
-Date,Holiday
-2020-09-07,Labor Day
-2020-10-12,Indig. P's Day
-2020-10-31,Halloween
-2020-11-26,Thanksgiving
-2020-12-25,Christmas
-2021-01-01,New Year
-2021-02-02,Groundhog Day
-2021-02-15,President's Day
-2021-03-17,St. Patrick's Day
-2021-04-04,Easter
-2021-04-17,17 April 2021
-2021-05-10,10 May 2021
-2021-05-31,Memorial Day
-2021-07-04,Independence Day
-2021-07-10,Bear Week
-2021-07-19,19 July Advisory
-2021-09-06,Labor Day
+Date,Holiday,Position
+2020-09-07,Labor Day,3
+2020-10-12,Indig. P's Day,3
+2020-10-31,Halloween,3
+2020-11-26,Thanksgiving,3
+2020-12-25,Christmas,4
+2021-01-01,New Year,4
+2021-02-02,Groundhog Day,5
+2021-02-15,President's Day,5
+2021-03-17,St. Patrick's Day,6
+2021-04-04,Easter,6
+2021-04-17,17 April 2021,6
+2021-05-10,10 May 2021,6
+2021-05-31,Memorial Day,6
+2021-07-04,Independence Day,9
+2021-07-10,Bear Week,9
+2021-07-19,19 July Advisory,10
+2021-09-06,Labor Day,10
+2021-10-11,Indig. P's Day,10

@@ -47,11 +47,11 @@ set style line 5 lc rgb 'dark-green' lw 2 # Massachusetts DPH Total Case Count f
 
 # Parens in the "using" clause indicate a formula or literal value
 plot \
-     data     using 1:2        with impulses title 'Active, Town-reported'    axes x1y2 ls 2                               , \
-     data     using 1:3        with lines    title 'Recovered, Town-reported' axes x1y1 ls 1                               , \
+     data     using 1:2        with impulses title 'Active, Town-reported (ceased in May 2021)'    axes x1y2 ls 2            , \
+     data     using 1:3        with lines    title 'Recovered, Town-reported (ceased in May 2021)' axes x1y1 ls 1            , \
      \
      data     using 1:3:4      with labels   notitle                          axes x1y1 font LABELFONTSPEC offset 0,char 0.5 , \
-     holidays using 1:(1.00):2 with labels   notitle                          axes x1y2 font FONTSPEC rotate by 90           , \
+     holidays using 1:3:2      with labels   notitle                          axes x1y2 font FONTSPEC rotate by 90           , \
      \
      combinedpttr using 1:5 with linespoints title 'Total Case Count for Provincetown and Truro, State-reported' axes x1y1 ls 5
 
