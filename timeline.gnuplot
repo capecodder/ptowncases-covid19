@@ -24,7 +24,7 @@ set title "Recovered and Active Cases in Provincetown\n{/*0.8 Sources: Town of P
 # Left y-axis (aka x1y1)
 set ylabel 'Recovered Cases' font FONTSPEC
 set yrange [0:]
-set ytics 10 nomirror
+set ytics 20 nomirror
 
 # Without left y-axis
 #unset ylabel
