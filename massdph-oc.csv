@@ -1,4 +1,4 @@
-Report Date,Provincetown TCC,Truro TCC,Wellfleet TCC,"P,T","P,T,W",14-day Case Count,14-day Tests,14-day Positive Tests,Days since 2020-07-01,
+Report Date,Provincetown TCC,Truro TCC,Wellfleet TCC,"P,T","P,T,W",14-day Case Count,14-day Tests,14-day Positive Tests,Days since 2020-07-01,xticlabel
 2020-07-08,22,10,5,32,37,,,,7,2020-07-08
 2020-07-29,27,10,5,37,42,<5,192,1,28,2020-07-29
 2020-08-05,27,11,5,38,43,,,,35,2020-08-05
@@ -85,3 +85,4 @@ Report Date,Provincetown TCC,Truro TCC,Wellfleet TCC,"P,T","P,T,W",14-day Case C
 2022-03-31,445,174,256,619,875,<5,144,1,638,2022-03-31
 2022-04-07,448,174,259,622,881,<5,184,4,645,2022-04-07
 2022-04-14,450,174,261,624,885,<5,170,4,652,2022-04-14
+2022-04-21,450,175,264,625,889,<5,148,2,659,2022-04-21
