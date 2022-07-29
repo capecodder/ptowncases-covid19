@@ -7,6 +7,7 @@ set output "timeline.png"
 set datafile separator comma
 LABELFONTSPEC = 'droid sans,8'
 # Valid FONTSPECs are 'default', 'mono', 'humor sans' or
+HOLIDAYSFONTSPEC = 'droid sans,8'
 FONTSPEC = 'droid sans'
 
 # Source data format
@@ -24,7 +25,7 @@ set title "Recovered and Active Cases in Provincetown\n{/*0.8 Sources: Town of P
 # Left y-axis (aka x1y1)
 set ylabel 'Recovered Cases' font FONTSPEC
 set yrange [0:]
-set ytics 20 nomirror
+set ytics out 20 nomirror
 
 # Without left y-axis
 #unset ylabel
@@ -33,7 +34,7 @@ set ytics 20 nomirror
 # Right y-axis (aka x1y2)
 set y2label 'Active Cases' font FONTSPEC
 set y2range [0:12] # manually include some whitespace for the ceiling
-set y2tics 2 nomirror
+set y2tics out 2 nomirror
 
 # Legend font with sample line BEFORE y label title ("reverse")
 set key font FONTSPEC left top # reverse
@@ -51,7 +52,7 @@ plot \
      data     using 1:3        with lines    title 'Recovered, Town-reported (ceased in May 2021)' axes x1y1 ls 1            , \
      \
      data     using 1:3:4      with labels   notitle                          axes x1y1 font LABELFONTSPEC offset 0,char 0.5 , \
-     holidays using 1:3:2      with labels   notitle                          axes x1y2 font FONTSPEC rotate by 90           , \
+     holidays using 1:3:2      with labels   notitle                          axes x1y2 font HOLIDAYSFONTSPEC rotate by 90   , \
      \
      combinedpttr using 1:5 with linespoints title 'Total Case Count for Provincetown and Truro, State-reported' axes x1y1 ls 5
 
